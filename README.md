@@ -49,3 +49,9 @@ For the browser smoke test, set `DOOM_BROWSER_PATH` to a Chrome, Chromium, or Ed
 ## Licensing
 
 The plugin and [Chocolate Doom](https://github.com/chocolate-doom/chocolate-doom) use the [GPL-2.0-or-later license](LICENSE). [Freedoom Phase 2](https://github.com/freedoom/freedoom) uses its [permissive license](vendor/doom-wasm/licenses/FREEDOOM-COPYING.txt). The [third-party notices](vendor/doom-wasm/licenses/THIRD_PARTY_NOTICES.md) cover the engine, game assets, SDL, and Emscripten. No commercial Doom assets are bundled. Doom in a Tab is an unofficial project.
+
+## Sync and source downloads
+
+The bundled game makes main.js about 43 MiB. This exceeds the 5 MB per-file limit reported by Obsidian Sync Standard. Install the plugin separately on each desktop. Saves remain temporary.
+
+GitHub provides corresponding source as the automatic source-code archives on each release, including the vendored engine source, build scripts and licenses. Release assets are built and attested by GitHub Actions.

@@ -1,7 +1,7 @@
 {
   "id": "doom-in-a-tab",
   "name": "Doom in a Tab",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "1.8.0",
   "description": "Play Doom in a workspace tab with bundled Freedoom levels and support for your own WAD files.",
   "author": "Pedro",

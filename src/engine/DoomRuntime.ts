@@ -40,7 +40,7 @@ export class DoomRuntime {
     this.logChanged?.("");
     this.token = crypto.randomUUID();
     const nonce = crypto.randomUUID();
-    const frame = this.host.ownerDocument.createElement("iframe");
+    const frame = this.host.createEl("iframe");
     this.frame = frame;
     frame.className = "doom-frame";
     frame.title = "DOOM game";
@@ -122,7 +122,7 @@ export class DoomRuntime {
         "The engine did not start within 60 seconds. Try Restart.",
       );
     }, 60_000);
-    this.host.appendChild(frame);
+
   }
 
   pause() {

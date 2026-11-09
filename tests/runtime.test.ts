@@ -6,6 +6,11 @@ import { DoomRuntime } from "../src/engine/DoomRuntime";
 function fixture() {
   const dom = new JSDOM("<main></main>");
   const host = dom.window.document.querySelector("main")!;
+  host.createEl = ((tag: string) => {
+    const child = dom.window.document.createElement(tag);
+    host.appendChild(child);
+    return child;
+  }) as typeof host.createEl;
   const runtime = new DoomRuntime(host, () => {});
   function event(
     type: string,
