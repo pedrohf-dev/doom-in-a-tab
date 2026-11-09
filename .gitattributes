@@ -1,0 +1,5 @@
+* text=auto
+vendor/doom-wasm/web/public/engine/* -text
+*.wad -text
+*.wasm -text
+*.data -text
