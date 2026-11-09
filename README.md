@@ -2,6 +2,10 @@
 
 Play Doom in a desktop Obsidian tab. The plugin runs Chocolate Doom in WebAssembly and includes Freedoom Phase 2. You can also load your own Doom WAD files.
 
+## Support development
+
+Enjoy playing Doom in your vault? [Support my work on Ko-fi](https://ko-fi.com/pedrohlf). Donations are optional and help me maintain the plugin.
+
 ## Install
 
 Requires Obsidian Desktop 1.8.0 or later and a keyboard. Get `main.js`, `manifest.json`, and `styles.css` from [GitHub Releases](https://github.com/pedrohf-dev/doom-in-a-tab/releases). Put all three in `<vault>/.obsidian/plugins/doom-in-a-tab/`, then enable **Doom in a Tab** under **Settings → Community plugins**. For a vault with a custom configuration folder, use that folder in place of `.obsidian`.
