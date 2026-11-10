@@ -31,4 +31,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" main.js manifest.json styles.css --verify-tag --title "Doom in a Tab $GITHUB_REF_NAME" --notes "Fix iframe creation and add build provenance attestations. Corresponding plugin and engine source is included in GitHub source-code archives. The bundled offline game exceeds the Obsidian Sync Standard 5 MB file limit."
+          gh release create "$GITHUB_REF_NAME" main.js manifest.json styles.css --verify-tag --title "Doom in a Tab $GITHUB_REF_NAME" --generate-notes
